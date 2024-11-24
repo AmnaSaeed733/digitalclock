@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digitalclock</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      .container {
+        text-align: center;
+        margin-top: 35vh;
+        font-family: Arial, sans-serif;
+      }
+
+      .heading {
+        font-size: 6em;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .clock {
+        font-size: 8em;
+        color: #0078d7;
+        animation: pulse 1s infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Digital Clock</h1>
+      <div class="clock">00:00:00</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
